@@ -50,6 +50,7 @@ public class DynArray<T> {
     count++;
   }
 
+  // O(n)
   public void insert(T itm, int index)
   {
     if (index < 0 || index >= count) {
@@ -65,6 +66,7 @@ public class DynArray<T> {
     count++;
   }
 
+  // O(n)
   public void remove(int index)
   {
     if (index < 0 || count == 0 || index >= count) {
