@@ -53,7 +53,7 @@ public class DynArray<T> {
   // O(n)
   public void insert(T itm, int index)
   {
-    if (index < 0 || index >= count) {
+    if (index < 0 || index > count) {
       throw new ArrayIndexOutOfBoundsException("Index out of bound");
     }
 
