@@ -19,7 +19,11 @@ public class Stack<T>
   //O(1)
   public T pop()
   {
-    return stackList.pop();
+    try {
+      return stackList.pop();
+    } catch (NoSuchElementException e) {
+      return null;
+    }
   }
 
   //O(1)

@@ -38,6 +38,7 @@ class StackTest {
     assertEquals(1, stack.peek());
     stack.pop();
     assertEquals(0, stack.size());
+    assertNull(stack.pop());
   }
 
   @Test
