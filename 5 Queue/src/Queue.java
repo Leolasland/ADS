@@ -21,12 +21,11 @@ public class Queue<T>
         if (queueList.size() == 0) {
             return null;
         }
-        return queueList.getLast();
+        return queueList.removeLast();
     }
 
     public int size()
     {
         return queueList.size();
     }
-
 }
